@@ -1,0 +1,1070 @@
+{
+    "1": {
+        "scene": "You wake up in your modest apartment on the morning of your first major political rally. The nation is in turmoil - economic crisis, social unrest, and government corruption have left people desperate for change.",
+        "choices": {
+            "Deliver a fiery nationalist speech promising order and strength": {
+                "next_scene": 2,
+                "integrity": -1,
+                "charisma_effect": 2,
+                "judgment_effect": -1
+            },
+            "Give a passionate socialist speech advocating workers' rights": {
+                "next_scene": 3,
+                "integrity": 1,
+                "charisma_effect": 1,
+                "judgment_effect": 1
+            },
+            "Skip the rally to meet with a powerful lobbyist offering support": {
+                "next_scene": 4,
+                "corruption": 1,
+                "charisma_effect": -1,
+                "judgment_effect": -2
+            }
+        }
+    },
+    "2": {
+        "scene": "Your speech electrifies the crowd! People chant your name, but a journalist accuses you of fearmongering. Camera flashes pop as the crowd waits for your response.",
+        "choices": {
+            "Attack the journalist as 'fake news'": {
+                "next_scene": 5,
+                "corruption": 2,
+                "charisma_effect": -1,
+                "judgment_effect": -2
+            },
+            "Calmly debate the journalist's points": {
+                "next_scene": 6,
+                "integrity": 1,
+                "charisma_effect": 1,
+                "judgment_effect": 2
+            },
+            "Ignore them and amp up the crowd": {
+                "next_scene": 7,
+                "corruption": 1,
+                "integrity": -1,
+                "charisma_effect": 2
+            }
+        }
+    },
+    "3": {
+        "scene": "Your socialist message resonates with workers, but a wealthy industrialist pulls you aside. 'I can fund your campaign,' he whispers, 'if you're reasonable about policies affecting my factories.'",
+        "choices": {
+            "Accept the deal (gain resources but owe favors)": {
+                "next_scene": 8,
+                "corruption": 3,
+                "charisma_effect": -1,
+                "judgment_effect": -3
+            },
+            "Reject him publicly (gain integrity but lose funding)": {
+                "next_scene": 9,
+                "integrity": 2,
+                "charisma_effect": 2,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "4": {
+        "scene": "In a plush office, a lobbyist slides an envelope across the table. 'Pass this law, and there's more where that came from.' The sum could transform your campaign.",
+        "choices": {
+            "Take the bribe (immediate boost but risk exposure)": {
+                "next_scene": 10,
+                "corruption": 4,
+                "judgment_effect": -3
+            },
+            "Expose the corruption (moral high ground but make enemies)": {
+                "next_scene": 11,
+                "integrity": 3,
+                "charisma_effect": 1,
+                "judgment_effect": 2
+            }
+        }
+    },
+    "5": {
+        "scene": "Your base loves the attack! But military leaders take notice - a general invites you to discuss 'shared interests' over dinner.",
+        "choices": {
+            "Accept the military's support": {
+                "next_scene": 12,
+                "corruption": 2,
+                "judgment_effect": -2
+            },
+            "Decline, fearing their influence": {
+                "next_scene": 13,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "6": {
+        "scene": "The journalist publishes a surprisingly fair piece about you, but your hardcore supporters feel betrayed. Poll numbers dip.",
+        "choices": {
+            "Apologize to your base": {
+                "next_scene": 14,
+                "corruption": 1,
+                "charisma_effect": 1
+            },
+            "Double down on moderation": {
+                "next_scene": 15,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "7": {
+        "scene": "The crowd goes wild, but moderate voters are alienated. Your campaign manager warns you're becoming too extreme.",
+        "choices": {
+            "Stay the course (energize base)": {
+                "next_scene": 16,
+                "integrity": -1,
+                "charisma_effect": 1
+            },
+            "Pivot to broader appeal": {
+                "next_scene": 17,
+                "integrity": 1,
+                "judgment_effect": 2
+            }
+        }
+    },
+    "8": {
+        "scene": "With industrial funding, your campaign grows, but socialist allies discover the deal. They threaten to expose you unless you reject the money.",
+        "choices": {
+            "Cut ties with the industrialist": {
+                "next_scene": 18,
+                "integrity": 2,
+                "charisma_effect": -1
+            },
+            "Betray your socialist allies": {
+                "next_scene": 19,
+                "corruption": 3,
+                "judgment_effect": -3
+            }
+        }
+    },
+    "9": {
+        "scene": "Your integrity inspires small donors, but you lack funds for TV ads. A foreign government offers 'discreet support' through shell companies.",
+        "choices": {
+            "Accept foreign help secretly": {
+                "next_scene": 20,
+                "corruption": 4,
+                "judgment_effect": -3
+            },
+            "Reject and struggle forward": {
+                "next_scene": 21,
+                "integrity": 2,
+                "charisma_effect": 1
+            }
+        }
+    },
+    "10": {
+        "scene": "The law passes easily with lobbyist support. You're rising fast! But a staffer threatens to leak evidence of your deal unless paid off.",
+        "choices": {
+            "Pay the blackmail (risk more demands)": {
+                "next_scene": 22,
+                "corruption": 2
+            },
+            "Have the staffer 'disappeared' (cross moral event horizon)": {
+                "next_scene": 23,
+                "corruption": 5
+            }
+        }
+    },
+    "11": {
+        "scene": "Your exposé makes headlines! The lobbyist is arrested, but powerful figures now target you. Death threats arrive daily.",
+        "choices": {
+            "Go into hiding with activists": {
+                "next_scene": 24,
+                "integrity": 1
+            },
+            "Stand defiant with increased security": {
+                "next_scene": 25,
+                "integrity": 2,
+                "charisma_effect": 1
+            }
+        }
+    },
+    "12": {
+        "scene": "The generals propose a 'partnership' - they'll ensure your victory if you give them expanded powers afterward.",
+        "choices": {
+            "Agree to their terms": {
+                "next_scene": 26,
+                "corruption": 3
+            },
+            "Negotiate for civilian control": {
+                "next_scene": 27,
+                "integrity": 1,
+                "judgment_effect": 2
+            }
+        }
+    },
+    "13": {
+        "scene": "The military turns against you, spreading rumors you're weak on security. But grassroots supporters organize to defend you.",
+        "choices": {
+            "Lead peaceful protests": {
+                "next_scene": 28,
+                "integrity": 2
+            },
+            "Flee to avoid bloodshed": {
+                "next_scene": 29,
+                "integrity": -1
+            }
+        }
+    },
+    "14": {
+        "scene": "Your base accepts the apology but enthusiasm wanes. Opponents smell blood and attack your 'weakness.'",
+        "choices": {
+            "Go ultra-hardline to compensate": {
+                "next_scene": 30,
+                "integrity": -2,
+                "charisma_effect": -1
+            },
+            "Stay the moderate course": {
+                "next_scene": 31,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "15": {
+        "scene": "You gain centrist support but lose passionate volunteers. The campaign feels hollow but effective.",
+        "choices": {
+            "Embrace pragmatic politics": {
+                "next_scene": 32,
+                "corruption": 1,
+                "judgment_effect": 1
+            },
+            "Reignite ideological passion": {
+                "next_scene": 33,
+                "integrity": 2,
+                "charisma_effect": 1
+            }
+        }
+    },
+    "16": {
+        "scene": "Your rallies become more extreme. Establishment figures call you dangerous, but your base would die for you.",
+        "choices": {
+            "Form paramilitary wing": {
+                "next_scene": 34,
+                "corruption": 3
+            },
+            "Keep it rhetorical": {
+                "next_scene": 35,
+                "integrity": -1,
+                "charisma_effect": 1
+            }
+        }
+    },
+    "17": {
+        "scene": "The pivot works! Poll numbers rise, but former allies accuse you of selling out. Protesters disrupt your events.",
+        "choices": {
+            "Crack down harshly": {
+                "next_scene": 36,
+                "corruption": 2,
+                "judgment_effect": -1
+            },
+            "Try to reconcile": {
+                "next_scene": 37,
+                "integrity": 1,
+                "charisma_effect": 1
+            }
+        }
+    },
+    "18": {
+        "scene": "The industrialist feels betrayed and funds your opponent. Your campaign struggles but maintains integrity.",
+        "choices": {
+            "Mobilize grassroots support": {
+                "next_scene": 38,
+                "integrity": 2
+            },
+            "Find new wealthy backers": {
+                "next_scene": 39,
+                "corruption": 2
+            }
+        }
+    },
+    "19": {
+        "scene": "You purge socialists from your movement. The industrialist rewards you handsomely. Factories hum while workers suffer.",
+        "choices": {
+            "Embrace crony capitalism fully": {
+                "next_scene": "ending_2",
+                "corruption": 3
+            },
+            "Feel guilty and help workers secretly": {
+                "next_scene": 40,
+                "integrity": 1,
+                "corruption": -1
+            }
+        }
+    },
+    "20": {
+        "scene": "Foreign money floods in through dark channels. Your ads dominate airwaves, but intelligence agents start following you.",
+        "choices": {
+            "Cut ties and return funds": {
+                "next_scene": 41,
+                "integrity": 1,
+                "corruption": -2
+            },
+            "Become a foreign asset": {
+                "next_scene": "ending_2",
+                "corruption": 4
+            }
+        }
+    },
+    "21": {
+        "scene": "Your shoestring campaign relies on volunteers. The passion is real, but you're being outspent 100-to-1.",
+        "choices": {
+            "Organize mass civil disobedience": {
+                "next_scene": 42,
+                "integrity": 2
+            },
+            "Focus on local elections first": {
+                "next_scene": 43,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "22": {
+        "scene": "The blackmailer returns demanding more. Your funds dwindle as paranoia grows. Someone is leaking your secrets.",
+        "choices": {
+            "Eliminate the threat permanently": {
+                "next_scene": "ending_4",
+                "corruption": 5
+            },
+            "Come clean publicly": {
+                "next_scene": 44,
+                "integrity": 2
+            }
+        }
+    },
+    "23": {
+        "scene": "The staffer 'disappears.' Police ask uncomfortable questions. Your inner circle is terrified of you.",
+        "choices": {
+            "Purge potential witnesses": {
+                "next_scene": "ending_4",
+                "corruption": 5
+            },
+            "Confess to authorities": {
+                "next_scene": 45,
+                "integrity": 3
+            }
+        }
+    },
+    "24": {
+        "scene": "From underground, you coordinate leaks exposing the powerful. The people rise up in your name!",
+        "choices": {
+            "Emerges as revolutionary leader": {
+                "next_scene": "ending_1",
+                "integrity": 2
+            },
+            "Stay hidden to avoid cult of personality": {
+                "next_scene": 46,
+                "integrity": 1
+            }
+        }
+    },
+    "25": {
+        "scene": "At a rally, gunfire erupts. Your security tackles you as chaos ensumes. They're trying to assassinate you!",
+        "choices": {
+            "Flee to safety": {
+                "next_scene": 47,
+                "integrity": -1
+            },
+            "Stand and face the crowd": {
+                "next_scene": 48,
+                "integrity": 2,
+                "charisma_effect": 2
+            }
+        }
+    },
+    "26": {
+        "scene": "The military delivers your victory! But now they dictate policy. Dissenters 'vanish' in the night.",
+        "choices": {
+            "Become a figurehead dictator": {
+                "next_scene": "ending_2",
+                "corruption": 3
+            },
+            "Try to regain civilian control": {
+                "next_scene": 49,
+                "integrity": 1,
+                "judgment_effect": 2
+            }
+        }
+    },
+    "27": {
+        "scene": "The generals are insulted. They launch a smear campaign calling you 'anti-military.' State media parrots their line.",
+        "choices": {
+            "Fight back hard": {
+                "next_scene": 50,
+                "integrity": 1,
+                "charisma_effect": 1
+            },
+            "Appease them with concessions": {
+                "next_scene": 51,
+                "corruption": 1
+            }
+        }
+    },
+    "28": {
+        "scene": "Millions march singing your name! The military hesitates to fire on such crowds. International media broadcasts the standoff.",
+        "choices": {
+            "Negotiate a transition deal": {
+                "next_scene": "ending_1",
+                "integrity": 2,
+                "judgment_effect": 2
+            },
+            "Demand complete surrender": {
+                "next_scene": 52,
+                "integrity": -1
+            }
+        }
+    },
+    "29": {
+        "scene": "From exile, you watch your movement collapse without leadership. The military consolidates power.",
+        "choices": {
+            "Accept defeat": {
+                "next_scene": "ending_3",
+                "integrity": -1
+            },
+            "Plan guerrilla resistance": {
+                "next_scene": 53,
+                "integrity": 1
+            }
+        }
+    },
+    "30": {
+        "scene": "You outflank opponents with extreme rhetoric. The base loves it, but mainstream parties unite against you.",
+        "choices": {
+            "Form your own nationalist party": {
+                "next_scene": 54,
+                "integrity": -1
+            },
+            "Threaten insurrection if not elected": {
+                "next_scene": 55,
+                "corruption": 2
+            }
+        }
+    },
+    "31": {
+        "scene": "Steady moderation wins over the exhausted majority. You're leading in polls but hated by both extremes.",
+        "choices": {
+            "Stay the course": {
+                "next_scene": 56,
+                "integrity": 1
+            },
+            "Court the establishment": {
+                "next_scene": 57,
+                "corruption": 1
+            }
+        }
+    },
+    "32": {
+        "scene": "You master the art of saying nothing while appearing sincere. Donors love your 'electability.'",
+        "choices": {
+            "Run as unity candidate": {
+                "next_scene": 58,
+                "integrity": -1,
+                "charisma_effect": 1
+            },
+            "Get promised cabinet position to drop out": {
+                "next_scene": 59,
+                "corruption": 2
+            }
+        }
+    },
+    "33": {
+        "scene": "A fiery speech reignites the base! But undecided voters are scared off by your passion.",
+        "choices": {
+            "Double down on ideology": {
+                "next_scene": 60,
+                "integrity": 1,
+                "charisma_effect": 1
+            },
+            "Temper rhetoric while keeping policies": {
+                "next_scene": 61,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "34": {
+        "scene": "Your brownshirts patrol rallies, attacking opponents. The government threatens to ban your movement.",
+        "choices": {
+            "Prepare coup attempt": {
+                "next_scene": "ending_4",
+                "corruption": 4
+            },
+            "Disband paramilitaries publicly": {
+                "next_scene": 62,
+                "integrity": 1
+            }
+        }
+    },
+    "35": {
+        "scene": "Violent supporters act on your rhetoric anyway. You're blamed for the bloodshed.",
+        "choices": {
+            "Denounce them weakly": {
+                "next_scene": 63,
+                "integrity": -1
+            },
+            "Fully embrace the violence": {
+                "next_scene": "ending_4",
+                "corruption": 3
+            }
+        }
+    },
+    "36": {
+        "scene": "Police brutalize protesters at your command. The opposition is cowed, but you've created martyrs.",
+        "choices": {
+            "Expand crackdowns": {
+                "next_scene": "ending_2",
+                "corruption": 2
+            },
+            "Ease up to calm tensions": {
+                "next_scene": 64,
+                "integrity": 1
+            }
+        }
+    },
+    "37": {
+        "scene": "You meet protesters' leaders. Some are moved by your sincerity, others call it a trick.",
+        "choices": {
+            "Make real concessions": {
+                "next_scene": 65,
+                "integrity": 2
+            },
+            "Use talks to identify ringleaders": {
+                "next_scene": 66,
+                "corruption": 1,
+                "judgment_effect": -1
+            }
+        }
+    },
+    "38": {
+        "scene": "Volunteers canvass every neighborhood. Your message spreads organically despite media blackout.",
+        "choices": {
+            "Organize general strike": {
+                "next_scene": 67,
+                "integrity": 1
+            },
+            "Run unconventional candidates everywhere": {
+                "next_scene": 68,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "39": {
+        "scene": "New backers demand even more favors than the industrialist. The cycle continues...",
+        "choices": {
+            "Accept the devil's bargain": {
+                "next_scene": "ending_2",
+                "corruption": 3
+            },
+            "Reject and go back to grassroots": {
+                "next_scene": 69,
+                "integrity": 2
+            }
+        }
+    },
+    "40": {
+        "scene": "You secretly fund worker cooperatives while publicly toeing the industrial line. The hypocrisy weighs on you.",
+        "choices": {
+            "Come clean and face consequences": {
+                "next_scene": 70,
+                "integrity": 2
+            },
+            "Maintain the charade": {
+                "next_scene": "ending_2",
+                "corruption": 1
+            }
+        }
+    },
+    "41": {
+        "scene": "Returning the money angers foreign sponsors. They leak damaging info about you out of spite.",
+        "choices": {
+            "Fight the smears": {
+                "next_scene": 71,
+                "integrity": 1,
+                "charisma_effect": 1
+            },
+            "Withdraw from public life": {
+                "next_scene": "ending_3",
+                "integrity": -1
+            }
+        }
+    },
+    "42": {
+        "scene": "Factories shut down as workers strike. The economy reels. The establishment panics!",
+        "choices": {
+            "Push for total victory": {
+                "next_scene": 72,
+                "integrity": 1
+            },
+            "Negotiate incremental gains": {
+                "next_scene": 73,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "43": {
+        "scene": "You win several local seats, building a base. National power seems within reach in a decade.",
+        "choices": {
+            "Accelerate the timeline": {
+                "next_scene": 74,
+                "judgment_effect": -1
+            },
+            "Build slowly and sustainably": {
+                "next_scene": 75,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "44": {
+        "scene": "Your confession shocks the nation. Some admire your honesty, others say it proves all politicians are corrupt.",
+        "choices": {
+            "Resign in disgrace": {
+                "next_scene": "ending_3",
+                "integrity": 1
+            },
+            "Fight to reform the system": {
+                "next_scene": 76,
+                "integrity": 2
+            }
+        }
+    },
+    "45": {
+        "scene": "The confession implicates powerful figures. They orchestrate your 'suicide' in prison.",
+        "ending": "ending_4"
+    },
+    "46": {
+        "scene": "The revolution succeeds without you! The new leaders invite you to help draft a constitution.",
+        "choices": {
+            "Emerges as elder statesman": {
+                "next_scene": "ending_1",
+                "integrity": 1
+            },
+            "Decline and mentor activists quietly": {
+                "next_scene": "ending_1",
+                "integrity": 2
+            }
+        }
+    },
+    "47": {
+        "scene": "You survive but look cowardly. Support evaporates. The assassination attempt achieves its goal.",
+        "ending": "ending_3"
+    },
+    "48": {
+        "scene": "You stand tall as the crowd shields you. The would-be assassin is apprehended. Your legend grows!",
+        "choices": {
+            "Channel this momentum": {
+                "next_scene": "ending_1",
+                "integrity": 1,
+                "charisma_effect": 2
+            },
+            "Warn against personality cults": {
+                "next_scene": 77,
+                "integrity": 2
+            }
+        }
+    },
+    "49": {
+        "scene": "You secretly cultivate reformist officers. A quiet coup restores civilian control - with you at the helm.",
+        "choices": {
+            "Restore democracy": {
+                "next_scene": "ending_1",
+                "integrity": 2
+            },
+            "Keep controlled democracy": {
+                "next_scene": "ending_2",
+                "corruption": 1
+            }
+        }
+    },
+    "50": {
+        "scene": "You expose military corruption bravely. Some officers defect to your side, others dig in.",
+        "choices": {
+            "Press the advantage": {
+                "next_scene": 78,
+                "integrity": 1
+            },
+            "Accept compromise peace": {
+                "next_scene": 79,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "51": {
+        "scene": "You give the military everything they want. They're satisfied but you've betrayed your voters.",
+        "ending": "ending_2"
+    },
+    "52": {
+        "scene": "Your maximalist demands unite all factions against you. The movement fractures.",
+        "ending": "ending_3"
+    },
+    "53": {
+        "scene": "Years later, your guerrilla campaign has destabilized the regime but at terrible human cost.",
+        "choices": {
+            "Negotiate peace": {
+                "next_scene": 80,
+                "integrity": 1
+            },
+            "Fight to the end": {
+                "next_scene": "ending_4",
+                "integrity": -1
+            }
+        }
+    },
+    "54": {
+        "scene": "Your new party wins shocking victories! The establishment tries to co-opt you.",
+        "choices": {
+            "Join their government": {
+                "next_scene": 81,
+                "corruption": 1
+            },
+            "Remain opposition": {
+                "next_scene": 82,
+                "integrity": 1
+            }
+        }
+    },
+    "55": {
+        "scene": "Your threats spark panic. The president declares martial law and arrests your leadership.",
+        "ending": "ending_4"
+    },
+    "56": {
+        "scene": "As extremists dominate both sides, the silent majority embraces your steady leadership.",
+        "choices": {
+            "Run for highest office": {
+                "next_scene": "ending_1",
+                "integrity": 1
+            },
+            "Stay as power behind throne": {
+                "next_scene": "ending_2",
+                "corruption": 1
+            }
+        }
+    },
+    "57": {
+        "scene": "Elites welcome you into their circles. The perks are nice, but your original goals fade.",
+        "ending": "ending_2"
+    },
+    "58": {
+        "scene": "You win in a landslide! But now everyone expects you to solve impossible problems.",
+        "choices": {
+            "Attempt bold reforms": {
+                "next_scene": "ending_1",
+                "integrity": 2
+            },
+            "Manage expectations": {
+                "next_scene": "ending_2",
+                "corruption": 1
+            }
+        }
+    },
+    "59": {
+        "scene": "The cabinet position gives you influence but no real power. You become part of the machine.",
+        "ending": "ending_2"
+    },
+    "60": {
+        "scene": "Your movement becomes a purist sect - powerful but too extreme to ever govern.",
+        "ending": "ending_3"
+    },
+    "61": {
+        "scene": "This balanced approach builds lasting power. Change comes slower but more sustainably.",
+        "choices": {
+            "Continue building": {
+                "next_scene": "ending_1",
+                "integrity": 1
+            },
+            "Retire satisfied": {
+                "next_scene": "ending_3",
+                "integrity": 1
+            }
+        }
+    },
+    "62": {
+        "scene": "The public disbanding restores some trust, but hardliners call you weak.",
+        "choices": {
+            "Pivot to democratic norms": {
+                "next_scene": 83,
+                "integrity": 1
+            },
+            "Rebrand the paramilitaries": {
+                "next_scene": 84,
+                "corruption": 1
+            }
+        }
+    },
+    "63": {
+        "scene": "The weak denunciation satisfies nobody. You're blamed while losing extremist support.",
+        "ending": "ending_3"
+    },
+    "64": {
+        "scene": "The easing calms tensions temporarily, but hardliners in your ranks plot against you.",
+        "choices": {
+            "Purge the hardliners": {
+                "next_scene": 85,
+                "integrity": 1
+            },
+            "Appease them with rhetoric": {
+                "next_scene": 86,
+                "integrity": -1
+            }
+        }
+    },
+    "65": {
+        "scene": "Real concessions split the opposition. Moderates join your coalition while radicals are isolated.",
+        "choices": {
+            "Welcome former opponents": {
+                "next_scene": "ending_1",
+                "integrity": 2
+            },
+            "Exploit their divisions": {
+                "next_scene": "ending_2",
+                "corruption": 1
+            }
+        }
+    },
+    "66": {
+        "scene": "You identify and neutralize key leaders. The movement collapses without direction.",
+        "ending": "ending_2"
+    },
+    "67": {
+        "scene": "The general strike paralyzes the country! Business leaders beg for negotiations.",
+        "choices": {
+            "Hold out for total victory": {
+                "next_scene": 87,
+                "integrity": 1
+            },
+            "Negotiate compromise": {
+                "next_scene": 88,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "68": {
+        "scene": "Your unconventional candidates win surprise victories! The political landscape shifts.",
+        "choices": {
+            "Push the advantage nationally": {
+                "next_scene": 89,
+                "judgment_effect": -1
+            },
+            "Consolidate local power first": {
+                "next_scene": 90,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "69": {
+        "scene": "Returning to grassroots re-energizes the campaign with authenticity, if not resources.",
+        "choices": {
+            "Build slowly from below": {
+                "next_scene": 91,
+                "integrity": 1
+            },
+            "Leverage moral authority": {
+                "next_scene": 92,
+                "integrity": 1,
+                "charisma_effect": 1
+            }
+        }
+    },
+    "70": {
+        "scene": "Your confession shocks allies and enemies alike. Some admire your integrity, others your naivety.",
+        "choices": {
+            "Rebuild authentically": {
+                "next_scene": 93,
+                "integrity": 2
+            },
+            "Leave politics altogether": {
+                "next_scene": "ending_3",
+                "integrity": 1
+            }
+        }
+    },
+    "71": {
+        "scene": "The smear campaign backfires as people see foreign interference for what it is.",
+        "choices": {
+            "Ride the wave of sympathy": {
+                "next_scene": 94,
+                "integrity": 1,
+                "charisma_effect": 2
+            },
+            "Focus on policy over personality": {
+                "next_scene": 95,
+                "integrity": 1,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "72": {
+        "scene": "The total shutdown forces the government to capitulate! Your terms are met.",
+        "choices": {
+            "Claim victory graciously": {
+                "next_scene": "ending_1",
+                "integrity": 2
+            },
+            "Push for even more": {
+                "next_scene": 96,
+                "integrity": -1
+            }
+        }
+    },
+    "73": {
+        "scene": "Incremental gains disappoint radicals but prove sustainable. Workers' lives improve measurably.",
+        "choices": {
+            "Build on these gains": {
+                "next_scene": "ending_1",
+                "integrity": 1
+            },
+            "Radicalize for faster change": {
+                "next_scene": 97,
+                "integrity": -1
+            }
+        }
+    },
+    "74": {
+        "scene": "Accelerating the timeline risks overreach but could capitalize on momentum.",
+        "choices": {
+            "Run bold national campaign": {
+                "next_scene": 98,
+                "judgment_effect": -1
+            },
+            "Stick to original plan": {
+                "next_scene": 99,
+                "judgment_effect": 1
+            }
+        }
+    },
+    "75": {
+        "scene": "Slow building creates deep roots. Change comes gradually but lasts generations.",
+        "ending": "ending_1"
+    },
+    "76": {
+        "scene": "Your anti-corruption crusade inspires a new generation of clean candidates.",
+        "ending": "ending_1"
+    },
+    "77": {
+        "scene": "Your humility deepens public trust. You lead without becoming a strongman.",
+        "ending": "ending_1"
+    },
+    "78": {
+        "scene": "The military splits along generational lines. Young officers overthrow the old guard!",
+        "choices": {
+            "Work with reformist officers": {
+                "next_scene": "ending_1",
+                "integrity": 1
+            },
+            "Assert complete civilian control": {
+                "next_scene": 100,
+                "integrity": 1,
+                "judgment_effect": -1
+            }
+        }
+    },
+    "79": {
+        "scene": "The compromise leaves military influence but establishes democratic processes.",
+        "ending": "ending_1"
+    },
+    "80": {
+        "scene": "The peace deal ends the bloodshed but leaves the regime in power.",
+        "ending": "ending_3"
+    },
+    "81": {
+        "scene": "Joining government gives you real power but forces uncomfortable compromises.",
+        "ending": "ending_2"
+    },
+    "82": {
+        "scene": "Staying opposition keeps you pure but powerless. Your supporters grow frustrated.",
+        "ending": "ending_3"
+    },
+    "83": {
+        "scene": "The democratic pivot wins back moderates. You're now a respectable opposition.",
+        "ending": "ending_1"
+    },
+    "84": {
+        "scene": "The rebranding fools nobody. Paramilitaries continue operating underground.",
+        "ending": "ending_4"
+    },
+    "85": {
+        "scene": "The purge saves your moderate image but creates dangerous enemies.",
+        "ending": "ending_4"
+    },
+    "86": {
+        "scene": "The fiery rhetoric keeps hardliners loyal but alienates the mainstream.",
+        "ending": "ending_3"
+    },
+    "87": {
+        "scene": "Holding out collapses the economy. The people suffer but you achieve total victory!",
+        "ending": "ending_1"
+    },
+    "88": {
+        "scene": "The compromise delivers real gains while maintaining stability.",
+        "ending": "ending_1"
+    },
+    "89": {
+        "scene": "National ambitions stretch your movement too thin. Local gains are lost.",
+        "ending": "ending_3"
+    },
+    "90": {
+        "scene": "Consolidating local power builds an unshakable base for future national runs.",
+        "ending": "ending_1"
+    },
+    "91": {
+        "scene": "Slow building from below creates the most sustainable movement of all.",
+        "ending": "ending_1"
+    },
+    "92": {
+        "scene": "Moral authority inspires people beyond politics. Your influence grows indirectly.",
+        "ending": "ending_1"
+    },
+    "93": {
+        "scene": "Rebuilding authentically takes years but creates something truly incorruptible.",
+        "ending": "ending_1"
+    },
+    "94": {
+        "scene": "Riding the sympathy wave propels you to unexpected heights!",
+        "ending": "ending_1"
+    },
+    "95": {
+        "scene": "Focusing on policy over personality builds lasting respect across the spectrum.",
+        "ending": "ending_1"
+    },
+    "96": {
+        "scene": "Pushing further overextends your movement. The counter-revolution succeeds.",
+        "ending": "ending_4"
+    },
+    "97": {
+        "scene": "Radicalizing alienates your base. The movement fractures and fails.",
+        "ending": "ending_3"
+    },
+    "98": {
+        "scene": "The bold national campaign catches fire! Against all odds, you win!",
+        "ending": "ending_1"
+    },
+    "99": {
+        "scene": "Sticking to the plan builds slowly but surely toward eventual victory.",
+        "ending": "ending_1"
+    },
+    "100": {
+        "scene": "Asserting complete civilian control angers the reformist officers. They withdraw support.",
+        "ending": "ending_3"
+    },
+    "ending_1": {
+        "scene": "Through principled leadership and strategic brilliance, you transform the nation! The people prosper under your visionary governance while democratic institutions remain strong. Your legacy will inspire generations.",
+        "required_integrity": 5,
+        "required_max_corruption": 3
+    },
+    "ending_2": {
+        "scene": "You gained absolute power but lost yourself along the way. The nation is stable but unfree, prosperous but unequal. History will remember you as yet another tyrant who promised change but perpetuated the same old systems.",
+        "required_corruption": 5
+    },
+    "ending_3": {
+        "scene": "Your political career ends not with a bang but a whimper. Whether through miscalculation, compromise, or simple bad luck, you fade into obscurity. The causes you championed carry on without you, their fate uncertain."
+    },
+    "ending_4": {
+        "scene": "Your body is found in a ditch, a bullet in the back of the skull. The official ruling is suicide, but everyone knows the truth. In the end, you were just another obstacle removed by those who really hold power.",
+        "required_corruption": 8
+    }
+}
